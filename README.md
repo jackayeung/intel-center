@@ -1,5 +1,3 @@
-# Creating the README.md content based on the provided details
-readme_content = """
 # Intel Energy Data Center Project
 
 ## Overview
