@@ -1,4 +1,4 @@
-# Intel Energy Data Center Project
+# Intel Energy Data Center Analysis
 
 ## Overview
 
