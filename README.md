@@ -77,19 +77,44 @@ ORDER BY renewable_percentage DESC;
 
 After analyzing states in different regions, interestingly, California, while not leading in total renewable energy, has a higher percentage of its total energy coming from renewable sources compared to Texas. This indicates that while Texas produces a large volume of renewable energy, California's energy production is more heavily reliant on renewables.
 
-Comparison of Regions Based on Total vs. Percentage of Renewable Energy
+#### Comparison of Regions Based on Total vs. Percentage of Renewable Energy
 A comparison between total renewable energy and the percentage of renewable energy by region shows that different regions lead depending on the metric used, highlighting the importance of considering both total production and sustainability when making recommendations for the location of the new data center.
-
-
 
 #### Aggregating Power Plant Data
 Counting Renewable Power Plants by Region
 We joined the intel.power_plants and intel.energy_by_plant tables to assess the distribution and output of renewable power plants across regions.
 
+```sql
+WITH joined_data AS (
+    SELECT 
+        p.region,
+        e.plant_code,
+        e.energy_type
+    FROM 
+        intel.power_plants p
+    JOIN 
+        intel.energy_by_plant e
+    ON 
+        p.plant_code = e.plant_code
+)
+
+SELECT 
+    region,
+    COUNT(DISTINCT plant_code) AS renewable_power_plants
+FROM 
+    joined_data
+WHERE 
+    energy_type = 'renewable_energy'
+GROUP BY 
+    region
+ORDER BY 
+    renewable_power_plants DESC
+```
+
 Result: The Midwest region was found to have the highest number of renewable power plants.
 
 #### Solar Photovoltaic Power Plants
-We focused on solar photovoltaic technology by assessing the total number of such plants and the total energy generated.
+The total number of solar photovoltaic plants and the energy generated from them was assessed.
 
 ```sql
 SELECT region, COUNT(*) AS solar_plant_count, SUM(total_energy) AS total_solar_energy
