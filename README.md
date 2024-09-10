@@ -50,6 +50,10 @@ GROUP BY region
 ORDER BY renewable_energy DESC;
 ```
 
+<p align="center">
+  <img src="images/graph2.png" alt="Example Image">
+</p>
+
 Result: The Northwest and Texas regions emerged as the top producers of renewable energy.
 
 #### Percentage of Renewable Energy by Region
