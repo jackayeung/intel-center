@@ -34,7 +34,9 @@ GROUP BY region
 ORDER BY total_energy DESC;
 ```
 
-![Image1](images/graph1.png)
+<p align="center">
+  <img src="images/graph1.png" alt="Example Image">
+</p>
 
 Result: The Mid-Atlantic region was identified as the region with the highest positive total energy, indicating it produces significantly more energy than it consumes.
 
