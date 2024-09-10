@@ -1,8 +1,8 @@
-# Intel Energy Data Center Analysis
-
 <p align="center">
   <img src="images/intellogo.png" alt="Example Image">
 </p>
+
+# Intel Energy Data Center Analysis
 
 ## Overview
 
