@@ -6,7 +6,7 @@ This project focuses on analyzing energy production and consumption across vario
 
 ## Problem Statement
 
-Intel, a leading semiconductor manufacturing company, is planning to build a new data center. Energy availability and usage are critical factors in determining the best location for this data center. The key questions include:
+Intel, a leading semiconductor manufacturing company, is planning to build a new data center. Energy availability and usage are critical factors in determining the best location for this data center. Important questions to answer include:
 - Which regions produce a surplus of energy, making them likely to offer energy at lower prices?
 - Which regions rely more on renewable energy sources?
 
