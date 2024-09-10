@@ -71,6 +71,10 @@ GROUP BY region
 ORDER BY renewable_percentage DESC;
 ```
 
+<p align="center">
+  <img src="images/graph3.png" alt="Example Image">
+</p>
+
 Result: California, while not leading in total renewable energy, has a higher percentage of its total energy coming from renewable sources compared to Texas.
 When considering the percentage of renewable energy, California replaced Texas in the top three regions, indicating that while Texas produces a large volume of renewable energy, California's energy production is more heavily reliant on renewables.
 
