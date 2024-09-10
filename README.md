@@ -1,12 +1,12 @@
 # Intel Energy Data Center Analysis
 
-## Overview
-
-This project focuses on analyzing energy production and consumption across various U.S. regions to assist Intel in selecting an optimal location for a new data center. The analysis considers factors such as energy availability, usage, and the reliance on renewable energy sources, with the goal of identifying regions that produce a surplus of energy and have strong renewable energy infrastructure.
-
 <p align="center">
   <img src="images/intellogo.png" alt="Example Image">
 </p>
+
+## Overview
+
+This project focuses on analyzing energy production and consumption across various U.S. regions to assist Intel in selecting an optimal location for a new data center. The analysis considers factors such as energy availability, usage, and the reliance on renewable energy sources, with the goal of identifying regions that produce a surplus of energy and have strong renewable energy infrastructure.
 
 ## Problem Statement
 
